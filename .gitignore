@@ -1,0 +1,38 @@
+# Environments
+.venv/
+env/
+venv/
+ENV/
+
+# Python cache & build
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Model weights and large artifacts
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.onnx
+*.gguf
+models/
+checkpoints/
+
+# Datasets and cache
+data/
+cache/
+.cache/
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+*.swp

@@ -1,0 +1,18 @@
+dataset:
+  name: "nyu-mll/glue"
+  subset: "mnli"
+  split: "validation_matched"
+  sample_size: 5000       # Number of evaluation samples
+
+labels:
+  names: ["entailment", "neutral", "contradiction"]
+  token_prefix: " "
+
+prompt:
+  template: |
+    <start_of_turn>user
+    Premise: {premise}
+    Hypothesis: {hypothesis}
+    Determine if the relationship between the 'Premise' and 'Hypothesis' is 'entailment', 'neutral' or 'contradiction.'
+    Answer with one word
+    <start_of_turn>model
