@@ -1,0 +1,59 @@
+{
+  "experiment": "02_vram_profiling_all_mlp_dbscan",
+  "target_model": "google/gemma-3-1b-it",
+  "ranks": [
+    3,
+    100,
+    350
+  ],
+  "num_layers": 26,
+  "num_projections": 78,
+  "unprocessed_param_vram_mb": 3814.26,
+  "factorized_param_vram_mb": 3158.84,
+  "static_vram_saved_mb": 655.42,
+  "static_vram_reduction_pct": 17.18,
+  "baseline_peak_vram_mb": 4128.81,
+  "factorized_peak_vram_mb": 3477.61,
+  "peak_vram_saved_mb": 651.2,
+  "peak_vram_reduction_pct": 15.77,
+  "baseline_accuracy": 48.0,
+  "factorized_accuracy": 34.4,
+  "accuracy_delta": -13.6,
+  "timings": [
+    {
+      "cell_id": 2,
+      "time": 0.001,
+      "cummulative_time": 1.717
+    },
+    {
+      "cell_id": 3,
+      "time": 4.526,
+      "cummulative_time": 6.246
+    },
+    {
+      "cell_id": 4,
+      "time": 3.558,
+      "cummulative_time": 9.809
+    },
+    {
+      "cell_id": 5,
+      "time": 46.023,
+      "cummulative_time": 55.839
+    },
+    {
+      "cell_id": 6,
+      "time": 0.002,
+      "cummulative_time": 55.849
+    },
+    {
+      "cell_id": 7,
+      "time": 136.233,
+      "cummulative_time": 192.09
+    },
+    {
+      "cell_id": 8,
+      "time": 58.658,
+      "cummulative_time": 250.754
+    }
+  ]
+}

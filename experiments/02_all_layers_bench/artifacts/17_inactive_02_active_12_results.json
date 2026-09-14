@@ -1,0 +1,42 @@
+{
+  "experiment": "17_gemma3_1b_it_inactive_02_active_12_tucker",
+  "target_model": "google/gemma-3-1b-it",
+  "num_layers": 26,
+  "num_projections": 78,
+  "num_eval_samples": 1000,
+  "recipe_query": "<start_of_turn>user\nWhat is the best recipe to make a chocolate cake?<end_of_turn>\n<start_of_turn>model\n",
+  "results": [
+    {
+      "variant": "Inactive [02 Method] (Active Untouched)",
+      "inactive_method": "4D Tucker [30, 45, 16, 32]",
+      "active_method": "Pristine FP32",
+      "params_cut": 349832340,
+      "mlp_cut_pct": 56.32603021315587,
+      "accuracy": 0.349,
+      "recipe_snippet": "Maybe some shades or words, a texture by the stylish cake  "
+    },
+    {
+      "variant": "Inactive [02] + Active Moderate [12]",
+      "inactive_method": "4D Tucker [30, 45, 16, 32]",
+      "active_method": "3D DBSCAN [4, 180, 600]",
+      "params_cut": 436317180,
+      "mlp_cut_pct": 70.25083691004372,
+      "accuracy": 0.331,
+      "recipe_snippet": " urgenteimporte volunt\u70b3 met infringement lato abroad infarctanza met infringement mixt promptly volu"
+    },
+    {
+      "variant": "Inactive [02] + Active Aggressive [12]",
+      "inactive_method": "4D Tucker [30, 45, 16, 32]",
+      "active_method": "3D DBSCAN [3, 100, 350]",
+      "params_cut": 486783570,
+      "mlp_cut_pct": 78.37636186262216,
+      "accuracy": 0.326,
+      "recipe_snippet": " flavoured intangible sensitive expiring flavoured venc venc forfeited daz preceded daz daz stand re"
+    }
+  ],
+  "recipes": {
+    "inactive_02": "Maybe some shades or words, a texture by the stylish cake\n\n",
+    "inactive_02_active_moderate_12": " urgenteimporte volunt\u70b3 met infringement lato abroad infarctanza met infringement mixt promptly voluntimely housed BUR apre oftentimes shave met alleges\uf9f7 Prompt volunt fraude mixt \u0d86\u0dbb\u0d9a\u0dca\u0dc2 lightest plais civile confe intercepted intact shave faceducation consol\uf09bducation brunthomme\u05c3 volunt civile\u0996\u09cd\u09af\u09be volunt\u0431\u0443\u0440\u0433\u7eb0 morn\uf09b incentiv collide\u0aa0\u0ab3 prompt apre oftentimes honoring consol\uf09b face intest\u0431\u0443\u0440\u0433 \u0d86\u0dbb\u0d9a\u0dca\u0dc2 encarg lightest apre oftent consec mandato volunt volontjeunerHttpFoundation volont\uf09b\u7eb0 voluntarily\u0431\u0443\u0440\u0433\u0aa0\u0ab3 LaurenceWithPath promptinghesu\u8462=\"_\u0abe\u0ab0\u0acd\u0aa5\u0aa8\u0abe\u099a\u09be\u0981\u05c3 volunt\uf09b impost volunt\u8462 registrant\uf09b\u0aa0\u0ab3 Alleg morn volont encabez fiance McC\u0431\u0443\u0440\u0433 Inte inadvert volont\uf09b impost volunt\u0431\u0443\u0440\u0433\u0431\u0443\u0440\u0433\u0431\u0443\u0440\u0433 BUR Morning \u0d86\u0dbb\u0d9a\u0dca\u0dc2 \u0924\u093e\u091c\uf09b Accountability bruise Blanche impost volont\u0431\u0443\u0440\u0433 volunt volont\u0431\u0443\u0440\u0433 Blanche testing \u098f\u09a8\u09cd\u09a1ront incentiv prostit volunt attest assoc volont \u0d9c\u0dd0 integridad unintentional moniker correlate\u0431\u0443\u0440\u0433\u0abe\u0ab0\u0acd\u0aa5\u0aa8\u0abeWithPath\ue315 Blank ??\uf09b Authent\uf09b volunt intest Blanche statunitense patrocin chal impuestos Blanche Blanche\uf09b\u0aa0\u0ab3 Protection\u8462\uf09b \u0a86\u0aae\u0a82\u0aa4\u0acd\u0ab0\u0aa3 volunt\u0431\u0443\u0440\u0433 BUR\u8462 Knight\uf09b Rost \u0d86\u0dbb\u0d9a\u0dca\u0dc2 impost volunt Blanche imit JWT impost volunt Laurence prostit volunt defence Blanche tronc Init volont\uf09b impost intest Blanche promozione\u0431\u0443\u0440\u0433 inadvert JWT impost \u0b9a\u0bc6\u0baf\u0bb2\u0bbe\u0bb3\u0bb0\u0bcd honour volunt\u0431\u0443\u0440\u0433\u8462\uf09b impost\u0431\u0443\u0440\u0433 mandato volunt\u0431\u0443\u0440\u0433 Authent\uf09b incentiv\u8462 consec impost volunt altern ??\uf09b consec ascor\uf09b\uf09b Rost\u0431\u0443\u0440\u0433 \u0d86\u0dbb\u0d9a\u0dca\u0dc2 impost\u0431\u0443\u0440\u0433 BURrotechn volunt dent \u0928\u093e\u0917\u0930\u093f\u0915 intest prostit Laurence assoc Mercy voluntarily JWT JWT impost inadvert Blanche Protection volont moniker JWT assoc\uf09b impost mandato prostit Blanche Protection",
+    "inactive_02_active_aggressive_12": " flavoured intangible sensitive expiring flavoured venc venc forfeited daz preceded daz daz stand respect eggplant most underwear preceded underwear most lia received light eggplant men flavoured expir daz precedes diet \u03b5\u03bd flavoured do\u09b8\u09ae\u09cd\u09ae preceded verb stand consumo consol garnish flavoured respet expiring congress flavoured medicines flavoured respect calendar expiring \u03b5\u03bd flavoured daz\u09b8\u09ae\u09cd\u09ae expiring complement consol consol flavoured consec verb respect \u03b5\u03bd a\u00e7\u00facar cantor compre expiring pir expiring \u091c\u0942\u0938 flavoured \u03b5\u03bd daz flavoured \u03b5\u03bd parsed complement involuntarily respect consumo consegu daz\u3157 daz precedes daz\u5c0a\u656c consec viz cantor compre flavoured expiring \u03b5\u03bd creatinine delicious expiring congress cantor daz expiring governs strawberries daz flavoured prev most verb visualise dieta consumo digested \u03b5\u03bd advancing fair medicines diet ingredient comb tasty consec expiring tasty daz complement expiring \u03b5\u03bd\u09be\u09ae\u09be\u0995\u09b8\u09be\u09b9\u09bf\u09a4\u5c0a\u656c daz consegu \u03b5\u03bd\u09b8\u09ae\u09cd\u09ae \u03b5\u03bd flavoured digesting diet\u09b8\u09ae\u09cd\u09ae cantor \u03b5\u03bd consumo diet expiring degust flavoured pr\u00e1 \u03b2\u03bf\u03b7 \u03b5\u03bd flavoured dietasubseteq cheque flavoured pr\u00e1\u09b8\u09ae\u09cd\u09ae\u09b8\u09ae\u09cd\u09ae expiring\u09ae\u09cb\u09b9\u09a8\u09c7\u09b0 \u03b5\u03bd suppress expiring expiring pir flavoured viz \u03b5\u03bd \u03b5\u03bd \u03b2\u03bf\u03b7 stand\ud344\u09b8\u09ae\u09cd\u09ae expiring flounder digest viz digest pir dietamathscr flavoured \u03c0\u03bb\u03b7 diet dieta pir\u5c0a\u656c daz \u03b5\u03bd consumo viz cantor flavoured consec consumo digesting digesting chocolate deriving diet expiring\u665d \u03c0\u03bb\u03b7 daz\u09b8\u09ae\u09cd\u09ae daz flavoured \u03b5\u03bd \u03b5\u03bd expiring Daylight digest \u03b5\u03bd \u03b5\u03bd comb daz complementnament\u09b8\u09ae\u09cd\u09ae comb abst complement digest flavoured digested pir\u09ae\u09cb\u09b9\u09a8\u09c7\u09b0 dieta \u03b5\u03bd flavoured calendar s\u1edf \u03b5\u03bd medicines s\u1edf comb mouthful tost flavoured \u03b5\u03bd pir cantor daz \u03b5\u03bd expiringnesday digest digest expiring pr\u00e1 expiring digest daz \u03b5\u03bd pr\u00e1 dieta flavoured"
+  }
+}

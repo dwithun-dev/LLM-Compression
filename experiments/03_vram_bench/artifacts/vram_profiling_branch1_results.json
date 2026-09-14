@@ -1,0 +1,63 @@
+{
+  "experiment": "01_vram_profiling_branch1",
+  "model_id": "google/gemma-3-1b-it",
+  "num_layers": 26,
+  "ranks": [
+    2,
+    20,
+    20
+  ],
+  "unprocessed": {
+    "gate_proj_vram_mb": 789.75,
+    "total_model_param_vram_mb": 3814.26,
+    "peak_runtime_vram_mb": 4917.94,
+    "accuracy": 0.5066666666666667
+  },
+  "processed_branch1": {
+    "gate_proj_vram_mb": 518.69,
+    "total_model_param_vram_mb": 3544.58,
+    "peak_runtime_vram_mb": 4648.31,
+    "accuracy": 0.4266666666666667
+  },
+  "savings": {
+    "gate_vram_saved_mb": 271.06,
+    "gate_vram_cut_pct": 34.32,
+    "total_param_vram_saved_mb": 269.69,
+    "accuracy_delta": -0.08000000000000002
+  },
+  "timing_summary": {
+    "cummulative_time_sec": 40.036,
+    "cell_timings": [
+      {
+        "cell_id": 2,
+        "time": 0.001,
+        "cummulative_time": 1.979
+      },
+      {
+        "cell_id": 3,
+        "time": 4.77,
+        "cummulative_time": 6.756
+      },
+      {
+        "cell_id": 4,
+        "time": 3.31,
+        "cummulative_time": 10.07
+      },
+      {
+        "cell_id": 5,
+        "time": 8.018,
+        "cummulative_time": 18.095
+      },
+      {
+        "cell_id": 6,
+        "time": 15.285,
+        "cummulative_time": 33.387
+      },
+      {
+        "cell_id": 7,
+        "time": 6.637,
+        "cummulative_time": 40.03
+      }
+    ]
+  }
+}

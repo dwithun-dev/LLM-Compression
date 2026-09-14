@@ -1,0 +1,75 @@
+{
+  "experiment": "08_independent_sublayer_dbscan_tucker",
+  "target_model": "google/gemma-3-1b-it",
+  "layer": 0,
+  "baseline_accuracy": 48.0,
+  "tiers": [
+    {
+      "Variant": "Moderate (77% Sweet Spot)",
+      "Ranks": "{'gate_proj': [4, 180, 600], 'up_proj': [4, 180, 600], 'down_proj': [4, 180, 600]}",
+      "Params_Saved": 4708728,
+      "Gate_Err": 76.72,
+      "Up_Err": 78.09,
+      "Down_Err": 76.09,
+      "Accuracy": 40.1,
+      "Delta": -7.9
+    },
+    {
+      "Variant": "Balanced Tier",
+      "Ranks": "{'gate_proj': [4, 250, 800], 'up_proj': [4, 250, 800], 'down_proj': [4, 250, 800]}",
+      "Params_Saved": 2829528,
+      "Gate_Err": 69.37,
+      "Up_Err": 70.64,
+      "Down_Err": 68.45,
+      "Accuracy": 41.6,
+      "Delta": -6.4
+    },
+    {
+      "Variant": "Mixed Optimal (Aggressive Gate + Moderate Up/Down)",
+      "Ranks": "{'gate_proj': [3, 100, 350], 'up_proj': [4, 180, 600], 'down_proj': [4, 180, 600]}",
+      "Params_Saved": 5355734,
+      "Gate_Err": 88.58,
+      "Up_Err": 78.09,
+      "Down_Err": 76.09,
+      "Accuracy": 37.9,
+      "Delta": -10.1
+    },
+    {
+      "Variant": "Aggressive Tier (All 3 Submodules)",
+      "Ranks": "{'gate_proj': [3, 100, 350], 'up_proj': [3, 100, 350], 'down_proj': [3, 100, 350]}",
+      "Params_Saved": 6649746,
+      "Gate_Err": 88.58,
+      "Up_Err": 89.77,
+      "Down_Err": 88.25,
+      "Accuracy": 39.5,
+      "Delta": -8.5
+    }
+  ],
+  "timings": [
+    {
+      "cell_id": 2,
+      "time": 4.345,
+      "cummulative_time": 6.157
+    },
+    {
+      "cell_id": 3,
+      "time": 3.489,
+      "cummulative_time": 9.651
+    },
+    {
+      "cell_id": 4,
+      "time": 34.985,
+      "cummulative_time": 44.642
+    },
+    {
+      "cell_id": 5,
+      "time": 0.717,
+      "cummulative_time": 45.366
+    },
+    {
+      "cell_id": 6,
+      "time": 150.041,
+      "cummulative_time": 195.416
+    }
+  ]
+}

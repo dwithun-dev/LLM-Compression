@@ -1,0 +1,63 @@
+{
+  "model_id": "google/gemma-3-1b-it",
+  "layer": 0,
+  "baseline_accuracy": 50.67,
+  "benchmarks": [
+    {
+      "Variant": "Inactive Conservative",
+      "Ranks": [
+        6,
+        160,
+        500
+      ],
+      "Gate_Err": 80.82,
+      "Up_Err": 83.27,
+      "Down_Err": 81.87,
+      "Params_Cut": 10463820,
+      "Accuracy": 53.33,
+      "Delta": 2.67
+    },
+    {
+      "Variant": "Inactive Moderate (Sweet Spot)",
+      "Ranks": [
+        5,
+        120,
+        350
+      ],
+      "Gate_Err": 86.71,
+      "Up_Err": 89.22,
+      "Down_Err": 87.91,
+      "Params_Cut": 11840250,
+      "Accuracy": 46.67,
+      "Delta": -4.0
+    },
+    {
+      "Variant": "Inactive Aggressive",
+      "Ranks": [
+        4,
+        80,
+        200
+      ],
+      "Gate_Err": 91.58,
+      "Up_Err": 93.96,
+      "Down_Err": 92.8,
+      "Params_Cut": 12844680,
+      "Accuracy": 49.33,
+      "Delta": -1.33
+    },
+    {
+      "Variant": "Inactive Ultra-Aggressive",
+      "Ranks": [
+        3,
+        40,
+        100
+      ],
+      "Gate_Err": 95.27,
+      "Up_Err": 97.22,
+      "Down_Err": 96.29,
+      "Params_Cut": 13394310,
+      "Accuracy": 47.33,
+      "Delta": -3.33
+    }
+  ]
+}

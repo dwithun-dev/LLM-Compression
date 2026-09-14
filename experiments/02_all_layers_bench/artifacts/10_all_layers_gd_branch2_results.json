@@ -1,0 +1,85 @@
+{
+  "experiment": "10_all_layers_gd_core_branch2",
+  "model_id": "google/gemma-3-1b-it",
+  "num_layers": 26,
+  "eval_samples": 150,
+  "mean_multiplicity": 2.043,
+  "baseline_accuracy": 0.5066666666666667,
+  "results": [
+    {
+      "Tier": "Baseline (Uncompressed)",
+      "Ranks": "Full",
+      "Total Params": 207028224,
+      "Ratio": "1.00x",
+      "Cut %": "0.00%",
+      "Mean Err %": "0.00%",
+      "Accuracy %": "50.67%",
+      "Delta": "+0.00%"
+    },
+    {
+      "Tier": "Tier 1 (Ultra ~99% Cut)",
+      "Ranks": "[2, 20, 20]",
+      "Total Params": 135971576,
+      "Ratio": "1.52x",
+      "Cut %": "34.32%",
+      "Mean Err %": "95.75%",
+      "Accuracy %": "36.00%",
+      "Delta": "-14.67%"
+    },
+    {
+      "Tier": "Tier 2 (Aggressive ~89% Cut)",
+      "Ranks": "[3, 80, 200]",
+      "Total Params": 143214292,
+      "Ratio": "1.45x",
+      "Cut %": "30.82%",
+      "Mean Err %": "82.33%",
+      "Accuracy %": "42.00%",
+      "Delta": "-8.67%"
+    },
+    {
+      "Tier": "Tier 3 (Moderate ~57% Cut)",
+      "Ranks": "[4, 180, 600]",
+      "Total Params": 166219248,
+      "Ratio": "1.25x",
+      "Cut %": "19.71%",
+      "Mean Err %": "60.15%",
+      "Accuracy %": "36.00%",
+      "Delta": "-14.67%"
+    }
+  ],
+  "timing_summary": {
+    "cummulative_time_sec": 697.701,
+    "cell_timings": [
+      {
+        "cell_id": 2,
+        "time": 6.46,
+        "cummulative_time": 8.234
+      },
+      {
+        "cell_id": 3,
+        "time": 3.651,
+        "cummulative_time": 12.013
+      },
+      {
+        "cell_id": 4,
+        "time": 145.058,
+        "cummulative_time": 157.078
+      },
+      {
+        "cell_id": 5,
+        "time": 2.863,
+        "cummulative_time": 159.948
+      },
+      {
+        "cell_id": 6,
+        "time": 2.071,
+        "cummulative_time": 162.025
+      },
+      {
+        "cell_id": 7,
+        "time": 535.546,
+        "cummulative_time": 697.58
+      }
+    ]
+  }
+}

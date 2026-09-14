@@ -1,0 +1,94 @@
+{
+  "experiment": "09_all_layers_gd_core_branch1",
+  "model_id": "google/gemma-3-1b-it",
+  "num_layers": 26,
+  "eval_samples": 1000,
+  "baseline_accuracy": 0.48,
+  "results": [
+    {
+      "Tier": "Baseline (Uncompressed)",
+      "Ranks": "Full",
+      "Total Params": 207028224,
+      "Ratio": "1.00x",
+      "Cut %": "0.00%",
+      "Mean Err %": "0.00%",
+      "Accuracy %": "48.00%",
+      "Delta": "+0.00%"
+    },
+    {
+      "Tier": "Tier 1 (Ultra ~99% Cut)",
+      "Ranks": "[2, 20, 20]",
+      "Total Params": 135971576,
+      "Ratio": "1.52x",
+      "Cut %": "34.32%",
+      "Mean Err %": "97.84%",
+      "Accuracy %": "34.10%",
+      "Delta": "-13.90%"
+    },
+    {
+      "Tier": "Tier 2 (Aggressive ~89% Cut)",
+      "Ranks": "[3, 80, 200]",
+      "Total Params": 143214292,
+      "Ratio": "1.45x",
+      "Cut %": "30.82%",
+      "Mean Err %": "90.55%",
+      "Accuracy %": "37.10%",
+      "Delta": "-10.90%"
+    },
+    {
+      "Tier": "Tier 2.5 (Target ~77% Cut)",
+      "Ranks": "[4, 120, 360]",
+      "Total Params": 151667568,
+      "Ratio": "1.37x",
+      "Cut %": "26.74%",
+      "Mean Err %": "83.55%",
+      "Accuracy %": "32.00%",
+      "Delta": "-16.00%"
+    },
+    {
+      "Tier": "Tier 3 (Moderate ~57% Cut)",
+      "Ranks": "[4, 180, 600]",
+      "Total Params": 166219248,
+      "Ratio": "1.25x",
+      "Cut %": "19.71%",
+      "Mean Err %": "76.30%",
+      "Accuracy %": "32.90%",
+      "Delta": "-15.10%"
+    }
+  ],
+  "timing_summary": {
+    "cummulative_time_sec": 334.706,
+    "cell_timings": [
+      {
+        "cell_id": 2,
+        "time": 7.055,
+        "cummulative_time": 9.442
+      },
+      {
+        "cell_id": 3,
+        "time": 3.648,
+        "cummulative_time": 13.095
+      },
+      {
+        "cell_id": 4,
+        "time": 46.186,
+        "cummulative_time": 59.287
+      },
+      {
+        "cell_id": 5,
+        "time": 3.141,
+        "cummulative_time": 62.434
+      },
+      {
+        "cell_id": 6,
+        "time": 2.066,
+        "cummulative_time": 64.506
+      },
+      {
+        "cell_id": 7,
+        "time": 270.132,
+        "cummulative_time": 334.7
+      }
+    ]
+  }
+}

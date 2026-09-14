@@ -1,0 +1,43 @@
+{
+  "experiment": "16_active_calibrated_inactive_tucker_02_method",
+  "target_model": "google/gemma-3-1b-it",
+  "inactive_method": "notebook_02_4d_tucker_[30,45,16,32]",
+  "results": [
+    {
+      "variant": "Reference: Pristine Uncompressed Model",
+      "gate_err": 0.0,
+      "up_err": 0.0,
+      "down_err": 0.0,
+      "params_cut": 0,
+      "accuracy": 0.48,
+      "delta": 0.131
+    },
+    {
+      "variant": "Inactive Baseline [Notebook 02 Method] (Active Untouched)",
+      "gate_err": 92.03494649667007,
+      "up_err": 92.91364229642429,
+      "down_err": 92.77897843947778,
+      "params_cut": 349832340,
+      "accuracy": 0.349,
+      "delta": 0.0
+    },
+    {
+      "variant": "Active Variant 1: Permuted Active Tucker ([6, 320, 900])",
+      "gate_err": 92.03494649667007,
+      "up_err": 92.91364229642429,
+      "down_err": 92.77897843947778,
+      "params_cut": 362310000,
+      "accuracy": 0.33,
+      "delta": -0.01899999999999996
+    },
+    {
+      "variant": "Active Variant 2: Adam-Calibrated Active Weights",
+      "gate_err": 92.03494649667007,
+      "up_err": 92.91364229642429,
+      "down_err": 92.77897843947778,
+      "params_cut": 349832340,
+      "accuracy": 0.332,
+      "delta": -0.01699999999999996
+    }
+  ]
+}

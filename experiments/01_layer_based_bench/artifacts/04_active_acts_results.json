@@ -1,0 +1,116 @@
+{
+  "model_id": "google/gemma-3-1b-it",
+  "eval_samples": 7000,
+  "active_neurons": 2400,
+  "baseline_accuracy": 0.49757142857142855,
+  "results": [
+    {
+      "Variant": "Baseline (Uncompressed)",
+      "Parameters": 2764800,
+      "Ratio": "1.00x",
+      "Reduction (%)": "0.0%",
+      "Recon Err (%)": "0.0%",
+      "Accuracy (%)": "49.76%",
+      "Delta vs Base": "+0.00%"
+    },
+    {
+      "Variant": "SVD (99% Energy)",
+      "Parameters": 3730650,
+      "Ratio": "0.74x",
+      "Reduction (%)": "-34.9%",
+      "Recon Err (%)": "9.98%",
+      "Accuracy (%)": "49.53%",
+      "Delta vs Base": "-0.23%"
+    },
+    {
+      "Variant": "SVD (95% Energy)",
+      "Parameters": 3048474,
+      "Ratio": "0.91x",
+      "Reduction (%)": "-10.3%",
+      "Recon Err (%)": "22.35%",
+      "Accuracy (%)": "49.51%",
+      "Delta vs Base": "-0.24%"
+    },
+    {
+      "Variant": "SVD (90% Energy)",
+      "Parameters": 2554607,
+      "Ratio": "1.08x",
+      "Reduction (%)": "7.6%",
+      "Recon Err (%)": "31.61%",
+      "Accuracy (%)": "50.30%",
+      "Delta vs Base": "+0.54%"
+    },
+    {
+      "Variant": "Tucker (High-Capacity)",
+      "Parameters": 1001648,
+      "Ratio": "2.76x",
+      "Reduction (%)": "63.8%",
+      "Recon Err (%)": "76.96%",
+      "Accuracy (%)": "49.69%",
+      "Delta vs Base": "-0.07%"
+    },
+    {
+      "Variant": "Tucker (Moderate)",
+      "Parameters": 392296,
+      "Ratio": "7.05x",
+      "Reduction (%)": "85.8%",
+      "Recon Err (%)": "90.60%",
+      "Accuracy (%)": "38.21%",
+      "Delta vs Base": "-11.54%"
+    },
+    {
+      "Variant": "Tucker (Aggressive)",
+      "Parameters": 176840,
+      "Ratio": "15.63x",
+      "Reduction (%)": "93.6%",
+      "Recon Err (%)": "95.32%",
+      "Accuracy (%)": "34.17%",
+      "Delta vs Base": "-15.59%"
+    }
+  ],
+  "timing_summary": {
+    "cummulative_time_sec": 1734.783,
+    "cell_timings": [
+      {
+        "cell_id": 2,
+        "time": 4.356,
+        "cummulative_time": 7.056
+      },
+      {
+        "cell_id": 3,
+        "time": 3.652,
+        "cummulative_time": 10.713
+      },
+      {
+        "cell_id": 4,
+        "time": 263.445,
+        "cummulative_time": 274.163
+      },
+      {
+        "cell_id": 5,
+        "time": 1.614,
+        "cummulative_time": 275.783
+      },
+      {
+        "cell_id": 6,
+        "time": 0.409,
+        "cummulative_time": 276.2
+      },
+      {
+        "cell_id": 7,
+        "time": 0.701,
+        "cummulative_time": 276.908
+      },
+      {
+        "cell_id": 8,
+        "time": 726.11,
+        "cummulative_time": 1003.025
+      },
+      {
+        "cell_id": 9,
+        "time": 731.741,
+        "cummulative_time": 1734.774
+      }
+    ]
+  }
+}

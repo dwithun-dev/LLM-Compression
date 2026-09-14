@@ -1,0 +1,27 @@
+{
+  "experiment": "03_vram_profiling_inactive_tucker_1000_samples_02_method",
+  "target_model": "google/gemma-3-1b-it",
+  "ranks": [
+    30,
+    45,
+    16,
+    32
+  ],
+  "num_layers": 26,
+  "num_projections": 78,
+  "num_eval_samples": 1000,
+  "unprocessed_param_vram_mb": 3814.2641639709473,
+  "factorized_param_vram_mb": 2483.872974395752,
+  "static_vram_saved_mb": 1330.3911895751953,
+  "static_vram_reduction_pct": 34.88,
+  "baseline_peak_vram_mb": 3858.91259765625,
+  "factorized_peak_vram_mb": 2671.58642578125,
+  "peak_vram_saved_mb": 1187.326171875,
+  "params_eliminated": 349832340,
+  "pristine_accuracy_1000": 48.0,
+  "factorized_accuracy_1000": 33.2,
+  "accuracy_delta_1000": -14.8,
+  "recipe_prompt": "<start_of_turn>user\nWhat is the best recipe to make a chocolate cake?<end_of_turn>\n<start_of_turn>model\n",
+  "pristine_cake_recipe": "Okay, let's talk about the *best* chocolate cake recipe! There's no *single* \"best\" \u2013 it really depends on your preferences for moistness, flavor intensity, and ease of execution. However, I'm going to give you a recipe that's consistently praised for its rich flavor, moist crumb, and beautiful chocolate color. This is a modified and highly-rated version of a classic.\n\n**The \"Decadent & Moist Chocolate Cake\" Recipe**\n\nThis recipe aims for a deep, dark chocolate flavor with a wonderfully tender crumb.\n\n**Yields:** 12-16 servings\n**Prep time:** 30 minutes\n**Bake time:** 30-35 minutes\n\n**Ingredients:**\n\n* **Dry Ingredients:**\n    * 2 cups (250g) All-Purpose Flour\n    * 2 cups (400g) Granulated Sugar\n    * \u00be cup (75g) Unsweetened Cocoa Powder (Dutch-processed is *highly* recommended for a richer flavor - but natural cocoa works too)\n    * 1 \u00bd teaspoons Baking Powder\n    * 1 \u00bd teaspoons Baking Soda\n    * 1 teaspoon Salt\n* **Wet",
+  "factorized_cake_recipe": "Illustimage\n\nIllustration\n\nOctLineImage\n\nIllustImethylunjukan\n\nIllustImEthylunjukan\n\nIllust Imethylunjukan\nIllust Imethylunjukan\n\nIllust Imethylunjukan\n\nIllust Imethylunjukan Illust\u0940\u092fDevice\n\n\nModel Visible\n\nIllustKeyRadio Alias Illustyajunjukan\nIllust Key Radio Alias Illustyajunjukan\n\nIllust Imethylunjukan Illustyaj\u03c3\u03c4\u03b7\u03bc\u03b1ElementellSemiSirippleSirSemaphoreSirSemaphoreSirStructuredStructuredStructured Structured PrincipSemiStructurePrincipSemiStructurePrincipSemiPrincipAlphaSymbolArrow Illustyajunjukan\n\nIllust Key Radio Alias Illustyaj\u03c3\u03c4\u03b7\u03bc\u03b1SirStructuredSemiSirStructuredPrincipAlphaSymbolArrowPrincipSemiPrincip articulateCodeSymbolArrowIntProductSourceCheckCheckName.\n\nIllustKey Radio Alias Illustyaj\u03c3\u03c4\u03b7\u03bc\u03b1SirStructuredSemiSirStructuredPrincipAlphaSymbolArrow)\nIllustration TermesignRXSirSemaphoreSirStructuredPrincipAlphaSymbolArrowInternalCompositionNameStepCheckThisTickNameInternalFrameStructuredSirSemaphoreSirStructuredPrincipAlphaSymbolArrowNameNumberedInternalFrame\nIllustKey Radio Alias Illustyaj\u03c3\u03c4\u03b7\u03bc\u03b1SirStructuredSemiSirStructuredPrincipAlphaSymbolArrowNumberedInternalFrame)\n\nIllust Key Radio Alias IllustyajSirStructuredSemiSirStructuredPrincipAlphaSymbolArrowNumberedInternalFrame\nIllustKey Radio Alias SirStructuredSemiSirStructuredPrincipAlphaSymbolArrowNumberedInternalFrame\nIllustkey Radio Alias SirStructuredSemiSirStructuredPrincipAlphaSymbolArrowNumberedInternal"
+}
