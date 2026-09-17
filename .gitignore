@@ -36,3 +36,5 @@ cache/
 .idea/
 .DS_Store
 *.swp
+
+/TensorLLM_repo

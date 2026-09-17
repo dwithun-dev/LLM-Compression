@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-09-16 13:13:07",
+  "model_id": "google/gemma-3-1b-it",
+  "eval_samples": 500,
+  "calib_samples": 128,
+  "baseline_accuracy_pct": 34.6,
+  "single_layer_14": {
+    "vanilla_acc_pct": 38.8,
+    "act_weighted_acc_pct": 31.8,
+    "param_cut_pct": 70.14,
+    "recon_err_pct": 65.34
+  },
+  "joint_2_layer_14_22": {
+    "vanilla_acc_pct": 38.6,
+    "act_weighted_acc_pct": 31.4,
+    "layers": [
+      14,
+      22
+    ],
+    "params_shaved": 7619072
+  },
+  "joint_4_layer_14_19_21_22": {
+    "vanilla_acc_pct": 35.2,
+    "act_weighted_acc_pct": 26.8,
+    "layers": [
+      14,
+      19,
+      21,
+      22
+    ],
+    "params_shaved": 15238144
+  }
+}
